@@ -1,6 +1,5 @@
 import requests
 from bs4 import BeautifulSoup
-import re
 
 bluelock_url = "https://aniwatchtv.to/watch/blue-lock-season-2-19318?ep=128447"
 
