@@ -1,10 +1,10 @@
 import requests
 from bs4 import BeautifulSoup
 
-bl_url = "https://www.animesrbija.com/anime/blue-lock-vs-u-20-japan"
+bluelock_url = "https://www.animesrbija.com/anime/blue-lock-vs-u-20-japan"
 
 # get website contents and parse html
-response = requests.get(bl_url)
+response = requests.get(bluelock_url)
 html = BeautifulSoup(response.text, 'html.parser')
 
 newText = html.find('ul', {"class" : "anime-episodes-holder"})
