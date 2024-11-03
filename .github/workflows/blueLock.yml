@@ -1,4 +1,4 @@
-name: sip scraper
+name: blue lock scraper
 
 on: [workflow_dispatch]
 
