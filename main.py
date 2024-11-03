@@ -2,13 +2,13 @@ import requests
 from bs4 import BeautifulSoup
 import re
 
-sip_url = "https://www.animesrbija.com/anime/blue-lock-vs-u-20-japan"
+bl_url = "https://www.animesrbija.com/anime/blue-lock-vs-u-20-japan"
 
 # get website contents and parse html
-response = requests.get(sip_url)
+response = requests.get(bl_url)
 html = BeautifulSoup(response.text, 'html.parser')
 
-newText = html.find('section', {"id" : "novosti"})
+newText = html.find('div', {"class" : "anime-episodes"})
 
 # create markdown string of courses
 novosti_markdown = newText.text
