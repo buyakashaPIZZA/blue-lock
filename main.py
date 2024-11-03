@@ -1,5 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
+import re
 
 bluelock_url = "https://www.animesrbija.com/anime/blue-lock-vs-u-20-japan"
 
