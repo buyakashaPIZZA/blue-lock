@@ -8,7 +8,7 @@ bl_url = "https://www.animesrbija.com/anime/blue-lock-vs-u-20-japan"
 response = requests.get(bl_url)
 html = BeautifulSoup(response.text, 'html.parser')
 
-newText = html.find('div', {"class" : "anime-episodes"})
+newText = html.find('ul', {"class" : "anime-episodes-holder"})
 
 # create markdown string of courses
 novosti_markdown = newText.text
